@@ -11,7 +11,21 @@ for i in range(101):
 2) Desarrolla un programa que solicite al usuario un número entero y determine la cantidad de
 dígitos que contiene.
 """
-#Ejercicio pendiente
+
+contador_digitos = 0
+numero = int(input("Ingrese un numero: "))
+
+if numero == 0:
+  contador_digitos += 1
+elif numero < 0:
+  numero = abs(numero)
+
+while numero > 0:
+  contador_digitos += 1
+
+  numero //= 10
+
+print(f"El numero ingresado posee {contador_digitos} digitos.")
 
 """
 3) Escribe un programa que sume todos los números enteros comprendidos entre dos valores
@@ -143,4 +157,20 @@ print("La media es", media_valores)
 10) Escribe un programa que invierta el orden de los dígitos de un número ingresado por el
 usuario. Ejemplo: si el usuario ingresa 547, el programa debe mostrar 745.
 """
-#Ejercicio pendiente
+
+"""
+10) Escribe un programa que invierta el orden de los dígitos de un número ingresado por el
+usuario. Ejemplo: si el usuario ingresa 547, el programa debe mostrar 745.
+"""
+
+numero = int(input("Ingrese un numero: "))
+
+numero_invertido = 0
+
+while numero > 0:
+  digito = numero % 10
+  numero_invertido = numero_invertido * 10 + digito
+
+  numero = numero // 10
+
+print(f"El numero invertido es: {numero_invertido}.")
