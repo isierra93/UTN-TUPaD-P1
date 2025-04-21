@@ -89,7 +89,23 @@ tabla_multiplicar(numero)
 dos números como parámetros y devuelva una tupla con el resultado de sumarlos, restarlos, multiplicarlos y dividirlos. 
 Mostrar los resultados de forma clara.
 """
-## Pendiente
+
+def operaciones_basicas(a, b) -> tuple:
+  suma = a + b
+  resta = a - b
+  mult = a * b
+  div = a / b
+  return (suma, resta, mult, div)
+
+num1 = int(input("Ingrese un numero:"))
+num2 = int(input("Ingrese un numero:"))
+
+result = operaciones_basicas(num1, num2)
+
+print(f"La suma: {result[0]}")
+print(f"La resta: {result[1]}")
+print(f"La multiplicación: {result[2]}")
+print(f"La división: {result[3]}")
 
 """8. Crear una función llamada calcular_imc(peso, altura) que reciba el
 peso en kilogramos y la altura en metros, y devuelva el índice de
