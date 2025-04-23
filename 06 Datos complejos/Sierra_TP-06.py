@@ -101,11 +101,11 @@ def balanceado(cadena:str) -> bool:
     pila = Pila()
 
     for e in cadena:
-        if e in pila.claves.keys():  # es apertura
+        if e in pila.claves.keys():
             pila.apilar(e)
-        elif e in pila.claves.values():  # es cierre
+        elif e in pila.claves.values():
             if pila.esta_vacia() or pila.claves[pila.ver_tope()] != e:
-                return False  # está mal balanceado
+                return False
             pila.desapilar()
 
     if pila.esta_vacia():
