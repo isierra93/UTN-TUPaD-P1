@@ -62,7 +62,17 @@ lo es.
 La solución debe ser recursiva.
 No se debe usar [::-1] ni la función reversed()."""
 
-#Pendiente
+def es_palindromo(palabra:str):
+    p = ""
+    for i in range(len(palabra)-1, -1, -1):
+        p = p + palabra[i]
+    if palabra == p:
+        return True
+    else:
+        return False
+
+print(es_palindromo("Aerea"))
+print(es_palindromo("aerea"))
 
 """ 6) Escribí una función recursiva en Python llamada suma_digitos(n) que reciba un
 número entero positivo y devuelva la suma de todos sus dígitos.
