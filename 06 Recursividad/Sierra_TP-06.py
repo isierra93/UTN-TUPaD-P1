@@ -45,21 +45,15 @@ print(f"La potencia de 3 elevado a la 5 es {potencia(3,5)}")
 """ 4) Crear una función recursiva en Python que reciba un número entero positivo en base
 decimal y devuelva su representación en binario como una cadena de texto. """
 
-##Pendiente
-cadena = []
 def binario(num):
     if num // 2 == 0:
+        return f"{num%2}"
+    return f"{binario(num // 2)}" + f"{num%2}"
 
-        cadena.append(1)
-        cadena.reverse()
-        return 0
-    
-    cadena.append(num % 2)
-    
-    return binario(num // 2) 
-
-print(binario(10))
-print(cadena)
+print(binario(10))  # "1010"
+print(type(binario(10)))
+print(binario(1))  # "1"
+print(type(binario(1)))
 
 """ 5) Implementá una función recursiva llamada es_palindromo(palabra) que reciba una
 cadena de texto sin espacios ni tildes, y devuelva True si es un palíndromo o False si no

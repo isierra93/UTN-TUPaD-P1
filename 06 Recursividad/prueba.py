@@ -1,16 +1,8 @@
-""" 7) Un niño está construyendo una pirámide con bloques. En el nivel más bajo coloca n
-bloques, en el siguiente nivel uno menos (n - 1), y así sucesivamente hasta llegar al
-último nivel con un solo bloque.
-Escribí una función recursiva contar_bloques(n) que reciba el número de bloques en el
-nivel más bajo y devuelva el total de bloques que necesita para construir toda la
-pirámide.
- Ejemplos:
-contar_bloques(1) → 1 (1)
-contar_bloques(2) → 3 (2 + 1)
-contar_bloques(4) → 10 (4 + 3 + 2 + 1)
- """
+""" 5) Implementá una función recursiva llamada es_palindromo(palabra) que reciba una
+cadena de texto sin espacios ni tildes, y devuelva True si es un palíndromo o False si no
+lo es.
+ Requisitos:
+La solución debe ser recursiva.
+No se debe usar [::-1] ni la función reversed()."""
 
-def contar_bloques(n):
-    pass
-
-contar_bloques(4)# → 10 (4 + 3 + 2 + 1)
+#Pendiente
