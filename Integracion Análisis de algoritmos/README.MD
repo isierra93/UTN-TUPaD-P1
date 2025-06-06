@@ -5,15 +5,38 @@
 ### Trabajo Práctico Integrador - Analisis de algoritmos
 
 ## ✨ Estudiantes  
-- **Nombres:** Ivan Victor Sierra 
+- **Nombres:** Ivan Victor Sierra, Cristian Siles
 - **Comisión:** M2025-21
+---
+## Link del video explicativo:
+[LINK]
+--
+# 📂 Descripción del Repositorio  
+## 📊 Análisis de Algoritmos en Python
 
-### Link video explicativo:
+Este proyecto forma parte de un trabajo práctico para la materia Programación I (UTN) y tiene como objetivo comparar el rendimiento de dos algoritmos de búsqueda: **búsqueda lineal (O(n))** y **búsqueda binaria (O(log n))**. Se analiza cómo se comportan ambos algoritmos frente a listas de gran tamaño, midiendo el tiempo de ejecución y visualizando los resultados mediante gráficos.
 
+---
 
-## 📂 Descripción del Repositorio  
-Este repositorio almacena el trabajo práctico realizado.
+## 🧠 Contenido
 
-📌 **Estructura del repositorio:** 
-- Los archivos de código fuente (`.py`) incluyen comentarios y estructura adecuada.  
-- Se busca mantener un código limpio, ordenado y bien documentado.  
+1. Introducción teórica sobre análisis de algoritmos.
+2. Implementación de búsqueda lineal y binaria en Python.
+3. Comparación de tiempos de ejecución.
+4. Visualización con gráficos usando Matplotlib.
+5. Diagramas de flujo y documentación complementaria.
+
+---
+
+## 🧪 Requisitos
+
+- Python 3.10 o superior
+- Librerías:
+  - `matplotlib`
+  - `random`
+  - `time`
+
+Para instalar las dependencias necesarias:
+
+```bash
+pip install matplotlib random time
