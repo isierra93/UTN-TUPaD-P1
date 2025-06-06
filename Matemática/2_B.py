@@ -12,9 +12,10 @@
 
 ·         Calcular el producto cartesiano entre el conjunto de años y el conjunto de edades actuales.
  """
+from datetime import date
+anio_actual = date.today().year
 
 #Inicialización de variables
-listado_anios = []
 anios_pares = 0
 anios_impares = 0
 gen_z = True
@@ -26,10 +27,11 @@ CAXCE = set()
 #Solicitar años
 for i in range(5):
     n = int(input("Ingrese el año de nacimiento: "))
-    listado_anios.append(n)
     CA.add(n)
-    CE.add(2025-n)
+    CE.add(anio_actual-n)
 
+print("CONJUNTO AÑOS:", CA)
+print("CONJUNTO EDADES:", CE)
 
 #Funcion para verificar si es biciesto
 def is_biciesto(anio):
@@ -37,7 +39,7 @@ def is_biciesto(anio):
         return True
     return False
 #Verificar años pares
-for anio in listado_anios:
+for anio in CA:
     #Verifica y cuenta años pares/impares
     if anio % 2 == 0:
         anios_pares = anios_pares + 1
@@ -61,4 +63,3 @@ if gen_z:
 if anio_biciesto:
     print("Tenemos un año especial") 
 print(f"El producto cartesiano entre el conjunto de años y el conjunto de edades actuales es: {CAXCE}")
-        
