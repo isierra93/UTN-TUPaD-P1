@@ -5,12 +5,14 @@
 ### Trabajo Práctico Integrador - Analisis de algoritmos
 
 ## ✨ Estudiantes  
-- **Nombres:** Ivan Victor Sierra, Cristian Siles
+- **Nombres:** Ivan Sierra, Cristian Siles
 - **Comisión:** M2025-21
 ---
-## Link del video explicativo:
-[LINK]
---
+
+## Link del vídeo explicativo:
+https://www.youtube.com/watch?v=ddRH7l3bA0c
+
+---
 # 📂 Descripción del Repositorio  
 ## 📊 Análisis de Algoritmos en Python
 
@@ -40,3 +42,4 @@ Para instalar las dependencias necesarias:
 
 ```bash
 pip install matplotlib random time
+```
