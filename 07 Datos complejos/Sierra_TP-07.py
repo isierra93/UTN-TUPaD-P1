@@ -135,15 +135,47 @@ class Cola:
         return self.elementos[0] if self.elementos else "La lista esta vacia"
 
 
-"""8) Crea una lista enlazada que permita insertar nodos al inicio y recorrer la lista para mostrar
-los valores almacenados.
-"""
-# Pendiente
-class Nodo:
-    def __init__(self) -> None:
-        pass
+""" 8) Armá un diccionario donde las claves sean nombres de productos y los valores su stock.
+Permití al usuario:
+• Consultar el stock de un producto ingresado.
+• Agregar unidades al stock si el producto ya existe.
+• Agregar un nuevo producto si no existe.
+ """
 
-"""9) Dada una lista enlazada, implementa una función para invertirla.
-"""
+productos_8 = {"arroz" : 10, "leche" : 3, "yerba" : 100}
+print(productos_8)
+print(f"Stock de arroz: {productos_8["arroz"]} .")
+productos_8["arroz"] += 1
+productos_8["pan"] = 5
+print(productos_8)
 
-# Pendiente
+""" 9) Creá una agenda donde las claves sean tuplas de (día, hora) y los valores sean eventos.
+Permití consultar qué actividad hay en cierto día y hora.
+ """
+
+agenda = {
+    ("Lunes", "9 AM") : "Asistir al medico",
+    ("Miercoles", "7 PM") : "Partido de futbol",
+    ("Sabado", "2 PM") : "Asado en Pilar"
+}
+
+print(agenda[("Miercoles", "7 PM")])
+
+""" 10) Dado un diccionario que mapea nombres de países con sus capitales, construí un nuevo
+diccionario donde:
+• Las capitales sean las claves.
+• Los países sean los valores. """
+
+paises_original:dict = {
+    "Argentina" : "Buenos Aires",
+    "Chile" : "Santiago de Chile",
+    "USA" : "Washington DC"
+}
+print("Original", paises_original)
+
+paises_copia_inversa:dict = {}
+
+for pais in paises_original:
+    paises_copia_inversa[paises_original[pais]] = pais
+
+print("Copia inversa" , paises_copia_inversa)
